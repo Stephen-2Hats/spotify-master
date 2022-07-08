@@ -2,9 +2,27 @@
     display: flex;
 
     .side-nav{
-        width: 176px;
+        width: rem(176);
         height: 100vh;
         background: $secondary-color1;
+    }
+
+    .right-nav{
+        padding: rem(16) 0 0;
+        h4{
+            padding: 0 rem(12);
+            margin-bottom: rem(16);
+            color: $secondary-color3;
+            text-transform: capitalize;
+        }
+    }
+
+    .sml-block{
+        width: rem(176);
+    }
+
+    .lrg-block{
+        width: calc(100% - rem(352));
     }
 
 

@@ -11,12 +11,16 @@
 @import "./base/grid";
 
 // Layouts
-@import "./layouts/left-nav"; 
-@import "./layouts/right-nav"; 
 @import "./layouts/main"; 
 @import "./layouts/common"; 
+@import "./layouts/main-nav"; 
+@import "./layouts/category-nav"; 
+@import "./layouts/friends-list"; 
+@import "./layouts/sticky-player"; 
 
 // Components
 @import "./components/buttons"; 
+@import "./components/sprite-image"; 
+@import "./components/scrollbar"; 
 
 // Pages 

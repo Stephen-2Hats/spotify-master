@@ -1,3 +1,4 @@
-.main{
-    width: 100%;
+.main {
+    width: calc(100% - rem(352));
+    background: #030;
 }

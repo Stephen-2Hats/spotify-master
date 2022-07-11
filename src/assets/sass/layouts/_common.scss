@@ -1,5 +1,6 @@
 .page-wrap{
     display: flex;
+    height: 100vh;
 
     .side-nav{
         width: rem(176);
@@ -19,6 +20,14 @@
 
     .sml-block{
         width: rem(176);
+
+        &.utility-cntrls{
+            padding-right: rem(12);
+        }
+
+        &.song-thumbnail{
+            padding-left: rem(12);
+        }
     }
 
     .lrg-block{

@@ -18,7 +18,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: $font-regular;
   font-size: rem(16);
-  line-height: rem(24);
+  // line-height: rem(24);
   color: $neutral-color1;
   min-height: 100%;
   background: $secondary-color2;
@@ -113,4 +113,5 @@ ul {
 blockquote {
   margin: 0;
 }
+
 

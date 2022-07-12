@@ -53,13 +53,13 @@
                 /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
                 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2d1ca3', endColorstr='#899c99', GradientType=0);
                 /* IE6-9 */
-                width: rem(16);
-                height: rem(16);
+                width: rem(12);
+                height: rem(12);
                 border-radius: rem(1);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: rem(8);
+                font-size: rem(6);
                 margin-right: rem(8);
               
                 span{

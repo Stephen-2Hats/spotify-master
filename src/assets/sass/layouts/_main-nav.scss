@@ -3,6 +3,8 @@
     position: relative;
 
     ul {
+
+
         li {
             display: block;
 
@@ -16,11 +18,15 @@
                 text-transform: capitalize;
                 border-radius: rem(4);
 
+
+
                 img {
                     margin-right: rem(8);
                 }
 
-                &:hover {
+                &:hover,
+                &:active,
+                &:focus {
                     color: $secondary-color3;
                     background: $color1;
 
@@ -37,7 +43,7 @@
         }
     }
 
-    &::after{
+    &::after {
         content: '';
         width: rem(160);
         height: rem(1);
@@ -47,5 +53,57 @@
         right: 0;
         bottom: 0;
         margin: 0 auto;
+
+
+
+    }
+}
+
+.stickybar {
+    .main-nav {
+        background: $color2;
+        padding: rem(12);
+        display: none;
+
+        @include mobile-lg() {
+            display: block;
+        }
+
+        ul {
+
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                display: inline-block;
+                margin-bottom: 0;
+
+                a {
+                    border-radius: 0;
+                    font-size: 0;
+                    line-height: 0;
+                    padding: 0;
+                    width: rem(40);
+                    height: rem(40);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img{
+                        margin: 0;
+                    }
+
+                    span{
+                        font-size: rem(12);
+                        line-height: rem(12);
+                    }
+
+                }
+            }
+        }
+
+        &::after {
+            display: none;
+        }
     }
 }

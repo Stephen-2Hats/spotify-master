@@ -1,11 +1,3 @@
-.main {
-    width: calc(100% - rem(352));
-    background: $secondary-color2;
-    padding: rem(16) 0;
-
-
-}
-
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -13,13 +5,26 @@
     margin-bottom: rem(32);
     padding: 0 rem(24);
 
+    @include mobile-lg() {
+        align-items: unset;
+    }
+
     .main-hdr-left {
         display: flex;
         align-items: center;
+
+        @include mobile-lg() {
+            display: block;
+        }
     }
 
     .page-prev-next {
         margin-right: rem(24);
+
+        @include mobile-lg() {
+            margin-right: 0;
+            margin-bottom: rem(10);
+        }
 
         a {
             margin-right: rem(12);
@@ -105,6 +110,8 @@
             }
         }
     }
+
+    
 }
 
 
@@ -112,6 +119,12 @@
     height: calc(100vh - rem(74));
     overflow-y: scroll;
     padding: 0 rem(24);
+    padding-bottom: rem(90);
+
+    @include mobile-lg() {
+        height: calc(100vh - rem(102));
+        padding-bottom: rem(240);
+    }
 
     .body-block {
         margin-bottom: rem(32);
@@ -152,13 +165,19 @@
         width: rem(332);
         margin-right: rem(24);
 
+        @include tablet-lg() {
+            margin-right: rem(16);
+        }
+
+        @include tablet-lg() {
+            margin-right: rem(12);
+        }
+
     }
 }
 
 .recent-searches {
-
     .rsnt-srch-blk {
-
         width: rem(152);
         background: $color2;
         border-radius: rem(4);
@@ -219,12 +238,11 @@
     }
 }
 
-
-
 .genre-block {
     position: relative;
     border-radius: rem(4);
     overflow: hidden;
+    transition: 0.3s all;
 
     h2,
     h3 {
@@ -242,6 +260,10 @@
         display: block;
         object-fit: cover;
     }
+
+    &:hover {
+        opacity: 0.75;
+    }
 }
 
 .all-genres {
@@ -252,5 +274,15 @@
         width: rem(152);
         margin-right: rem(28);
         margin-bottom: rem(28);
+
+        @include tablet-lg() {
+            margin-right: rem(16);
+            margin-bottom: rem(16);
+        }
+
+        @include tablet-lg() {
+            margin-right: rem(12);
+            margin-bottom: rem(12);
+        }
     }
 }

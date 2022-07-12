@@ -1,0 +1,95 @@
+.profile-page {
+
+
+    .main-header-outer {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#636363+0,191414+99 */
+        background: #636363;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #636363 0%, #191414 99%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #636363 0%, #191414 99%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #636363 0%, #191414 99%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#636363', endColorstr='#191414', GradientType=0);
+        /* IE6-9 */
+
+
+        padding: rem(16) rem(24);
+
+
+        .main-header {
+            margin-bottom: rem(64);
+        }
+
+        .profile-cover {
+            display: flex;
+            align-items: center;
+
+            .profile-text {
+                margin-left: rem(16);
+
+                p {
+                    display: flex;
+                    font-size: rem(12);
+                    line-height: rem(14);
+                    color: $secondary-color3;
+                    margin: 0;
+
+                }
+
+                h1 {
+                    margin: rem(16) 0;
+                }
+            }
+        }
+    }
+
+    .main-body{
+        padding: rem(16) rem(24);
+
+        .play-panel{
+            display: flex;
+            align-items: center;
+
+            .primary-btn{
+                margin-left: rem(24);
+            }
+        }
+
+        .body-part{
+            margin-top: rem(24);
+
+            h3{
+                color: $secondary-color3;
+                text-transform: capitalize;
+            }
+
+            .two-col-row{
+                display: flex;
+
+                .two-col{
+                   &.lrg{
+                    width: 55%;
+                    background: pink;
+                   }
+
+                   &.sml{
+                    width: 45%;
+                   }
+                }
+            }
+
+            .popular-item{
+                margin-bottom: rem(12);
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+
+
+}

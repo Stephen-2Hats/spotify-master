@@ -22,7 +22,7 @@ body {
   color: $neutral-color1;
   min-height: 100%;
   background: $secondary-color2;
- 
+
 }
 
 
@@ -55,12 +55,33 @@ h2 {
   line-height: rem(40);
   margin: 0 0 rem(20);
 
+  @include tablet-lg() {
+    font-size: rem(26);
+    line-height: rem(28);
+  }
+
+  @include mobile-lg() {
+    font-size: rem(24);
+    line-height: rem(26);
+  }
+
 }
 
 h3 {
   font-size: rem(20);
   line-height: rem(24);
   margin: 0 0 rem(20);
+
+
+  @include tablet-lg() {
+    font-size: rem(18);
+    line-height: rem(20);
+  }
+
+  @include mobile-lg() {
+    font-size: rem(16);
+    line-height: rem(18);
+  }
 
 }
 
@@ -113,5 +134,3 @@ ul {
 blockquote {
   margin: 0;
 }
-
-

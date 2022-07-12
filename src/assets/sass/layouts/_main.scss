@@ -20,6 +20,7 @@
 
     .page-prev-next {
         margin-right: rem(24);
+        display: flex;
 
         @include mobile-lg() {
             margin-right: 0;
@@ -28,13 +29,24 @@
 
         a {
             margin-right: rem(12);
+            width: rem(16);
+            height: rem(16);
+            background: $secondary-color1;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span{
+                font-size: rem(8);
+            }
 
             &:last-child {
                 margin-right: 0;
             }
 
             &:hover {
-                opacity: 0.5;
+                background: $primary-color;
             }
         }
     }
@@ -83,6 +95,10 @@
 
             .avatar {
                 margin-right: rem(4);
+            }
+
+            span{
+                font-size: rem(4);
             }
         }
 
@@ -185,10 +201,20 @@
         position: relative;
 
         &:before {
-            content: url("../img/close.svg");
+            content: "\e90c";
+            font-family: 'icomoon';
             position: absolute;
             top: rem(2);
             right: rem(2);
+            font-size: rem(8);
+            width: rem(16);
+            height: rem(16);
+            border-radius: 100%;
+            background: $secondary-color1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $secondary-color3;
         }
 
         .artist-image {
@@ -232,6 +258,10 @@
                     opacity: 1;
                     visibility: visible;
                 }
+            }
+
+            &:before{
+                background: $primary-color;
             }
         }
 

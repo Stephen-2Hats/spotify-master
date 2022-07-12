@@ -28,6 +28,80 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-down-arrow:before {
+  content: "\e914";
+}
+.icon-heart:before {
+  content: "\e90f";
+  color: #fff;
+}
+.icon-plus-solid:before {
+  content: "\e90b";
+  color: #fff;
+}
+.icon-plus-outline:before {
+  content: "\e90e";
+  color: #b2b2b2;
+}
+.icon-play:before {
+  content: "\e910";
+}
+.icon-angle-left:before {
+  content: "\e911";
+  color: #fff;
+}
+.icon-angle-right:before {
+  content: "\e913";
+  color: #fff;
+}
+.icon-disc:before {
+  content: "\e908";
+  color: #b2b2b2;
+}
+.icon-status:before {
+  content: "\e909";
+  color: #b2b2b2;
+}
+.icon-music-outline:before {
+  content: "\e90a";
+  color: #b2b2b2;
+}
+.icon-close:before {
+  content: "\e90c";
+  color: #fff;
+}
+.icon-search:before {
+  content: "\e90d";
+  color: #777;
+}
+.icon-heart-outline:before {
+  content: "\e912";
+  color: #b2b2b2;
+}
+.icon-library-solid:before {
+  content: "\e917";
+  color: #fff;
+}
+.icon-library-outline:before {
+  content: "\e918";
+  color: #b2b2b2;
+}
+.icon-search-solid:before {
+  content: "\e919";
+  color: #fff;
+}
+.icon-search-outline:before {
+  content: "\e91a";
+  color: #b2b2b2;
+}
+.icon-home-solid:before {
+  content: "\e91b";
+  color: #fff;
+}
+.icon-home-outline:before {
+  content: "\e91c";
+  color: #b2b2b2;
+}
 .icon-expand:before {
   content: "\e900";
 }
@@ -55,4 +129,3 @@
 .icon-users:before {
   content: "\e972";
 }
-

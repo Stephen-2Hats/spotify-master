@@ -1,5 +1,5 @@
 /**
- * Custom dropdown
+ * Custom dropdown - Account dropdown header
  * 
  */
 var list = $('.drpdwn-list');
@@ -10,7 +10,7 @@ link.click(function (e) {
 });
 
 /**
- * Custom dropdown
+ * Friends activity toggle window on mobile
  * 
  */
 $(".openfrnds").click(function () {

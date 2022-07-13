@@ -73,10 +73,14 @@
             border: 0;
             position: absolute;
             left: rem(8);
-            top: rem(4);
-            // transform: translateY(-50%);
+            // top: rem(4);
+            top: 50%;
+            transform: translateY(-50%);
             cursor: pointer;
             padding: 0;
+            font-size: rem(12);
+
+            
         }
     }
 
@@ -135,11 +139,11 @@
     height: calc(100vh - rem(74));
     overflow-y: scroll;
     padding: 0 rem(24);
-    padding-bottom: rem(90);
+    padding-bottom: rem(100);
 
     @include mobile-lg() {
         height: calc(100vh - rem(102));
-        padding-bottom: rem(240);
+        padding-bottom: rem(250);
     }
 
     .body-block {
@@ -155,18 +159,7 @@
                 color: $secondary-color3;
                 margin-bottom: 0;
             }
-
-            a {
-                color: $secondary-color3;
-                text-transform: uppercase;
-                font-size: rem(10);
-                line-height: rem(12);
-
-
-                &:hover {
-                    color: $primary-color;
-                }
-            }
+           
         }
 
     }

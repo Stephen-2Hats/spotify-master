@@ -2,6 +2,7 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -48,6 +49,21 @@ h1 {
   line-height: rem(96);
   color: $secondary-color3;
   margin: 0 0 rem(20);
+
+  @include tablet-lg() {
+    font-size: rem(60);
+    line-height: rem(65);
+  }
+
+  @include mobile-lg() {
+    font-size: rem(40);
+    line-height: rem(45);
+  }
+
+  @include mobile-md() {
+    font-size: rem(30);
+    line-height: rem(35);
+  }
 }
 
 h2 {

@@ -1,86 +1,88 @@
 .profile-page {
+    position: relative;
 
-
-    .main-header-outer {
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#636363+0,191414+99 */
+    &::before {
+        content: '';
+        height: rem(300);
+        width: 100%;
         background: #636363;
-        /* Old browsers */
         background: -moz-linear-gradient(top, #636363 0%, #191414 99%);
-        /* FF3.6-15 */
         background: -webkit-linear-gradient(top, #636363 0%, #191414 99%);
-        /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom, #636363 0%, #191414 99%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#636363', endColorstr='#191414', GradientType=0);
-        /* IE6-9 */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
 
 
+    .main-header {
         padding: rem(16) rem(24);
+        margin-bottom: 0;
+    }
 
 
-        .main-header {
-            margin-bottom: rem(64);
-            padding: 0;
+    .profile-cover {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(48);
 
-            @include tablet-lg() {
-                margin-bottom: rem(40);
-            }
-
-            @include mobile-lg() {
-                margin-bottom: rem(20);
-
-            }
+        @include tablet-lg() {
+            margin-bottom: rem(40);
         }
 
-        .profile-cover {
-            display: flex;
-            align-items: center;
+        @include mobile-lg() {
+            margin-bottom: rem(20);
 
-            .profile-image {
-                img {
+        }
 
-                    @include tablet-lg() {
-                        width: rem(140);
-                        height: rem(140);
-                    }
+        .profile-image {
+            img {
 
-                    @include mobile-lg() {
-                        width: rem(100);
-                        height: rem(100);
-                    }
+                @include tablet-lg() {
+                    width: rem(140);
+                    height: rem(140);
                 }
 
-
+                @include mobile-lg() {
+                    width: rem(100);
+                    height: rem(100);
+                }
             }
+
+
+        }
+    }
+
+    .profile-text {
+        margin-left: rem(16);
+
+        p {
+            display: flex;
+            font-size: rem(12);
+            line-height: rem(14);
+            color: $secondary-color3;
+            margin: 0;
+
         }
 
-        .profile-text {
-            margin-left: rem(16);
-
-            p {
-                display: flex;
-                font-size: rem(12);
-                line-height: rem(14);
-                color: $secondary-color3;
-                margin: 0;
-
-            }
-
-            h1 {
-                margin: rem(16) 0;
-            }
+        h1 {
+            margin: rem(16) 0;
         }
     }
 
 
     .main-body {
-        height: calc(100vh - rem(285));
+        height: calc(100vh - rem(56));
         overflow-y: scroll;
-        padding: rem(16) rem(24);
-        padding-bottom: rem(100);
+
+        padding: rem(48) rem(24) rem(100) rem(24);
+
 
         @include mobile-lg() {
-            height: calc(100vh - rem(266));
+            height: calc(100vh - rem(82));
+            padding-top: rem(24);
             padding-bottom: rem(250);
         }
 

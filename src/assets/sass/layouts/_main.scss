@@ -4,6 +4,8 @@
     align-items: center;
     margin-bottom: rem(32);
     padding: 0 rem(24);
+    position: relative;
+    z-index: 9;
 
     @include mobile-lg() {
         align-items: unset;
@@ -140,6 +142,8 @@
     overflow-y: scroll;
     padding: 0 rem(24);
     padding-bottom: rem(100);
+    position: relative;
+    z-index: 9;
 
     @include mobile-lg() {
         height: calc(100vh - rem(102));

@@ -27,6 +27,9 @@
         padding: rem(16) 0 0;
         transition: 0.3s all;
 
+        position: relative;
+        z-index: 99;
+
         @include tablet-md() {
             display: none;
             position: fixed;
